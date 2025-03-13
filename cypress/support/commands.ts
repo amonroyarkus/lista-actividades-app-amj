@@ -4,7 +4,7 @@ import { e2e } from "../support/Constants";
 declare global {
     namespace Cypress {
         interface Chainable {
-            validacionInicial(): Chainable<void>
+            validacionInicial(): Chainable<Element>
         }
     }
 }
