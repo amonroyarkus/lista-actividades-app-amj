@@ -2,7 +2,7 @@
 
   <!-- Formulario para agregar o editar actividades -->
   <div *ngIf="actividadEditando; else agregar" class="form-container">
-    <h3>Editar Actividad</h3>
+    <h3 data-cy="u3dd86x1">Editar Actividad</h3>
     <input [(ngModel)]="actividadEditando.nombre" placeholder="Nombre de la actividad" class="input">
     <button (click)="guardarEdicion()" class="btn btn-save">Guardar</button>
     <button (click)="actividadEditando = null" class="btn btn-cancel">Cancelar</button>
@@ -10,9 +10,9 @@
 
   <ng-template #agregar>
     <div class="form-container">
-      <h3>Agregar Actividad</h3>
-      <input [(ngModel)]="nuevaActividad" placeholder="Nombre de la actividad" class="input">
-      <button (click)="agregarActividad()" class="btn btn-add">Agregar</button>
+      <h3 data-cy="u3dd86x2">Agregar Actividad</h3>
+      <input [(ngModel)]="nuevaActividad" placeholder="Nombre de la actividad" class="input" data-cy="u3dd86x3">
+      <button (click)="agregarActividad()" class="btn btn-add" data-cy="u3dd86x4">Agregar</button>
     </div>
   </ng-template>
 
